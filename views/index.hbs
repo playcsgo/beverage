@@ -1,0 +1,132 @@
+<div class="container">
+  <h2 class="text-center pt-4 text-light">Beverage POS</h2>
+  <div class="row">
+    <!-- checkout btn -->
+      <div class="text-end">
+        <button class="btn btn-danger" style="min-width: 120px;" data-pos="checkout">Checkout</button>
+      </div>
+    <!-- checkout btn -->
+    <!-- left side order list -->
+    <div class="col-md-4 p-4" data-order-lists>
+      {{!-- <div class="card mb-3">
+        <div class="card-body pt-3 pr-3">
+          <!-- delete btn -->
+          <div class="text-end">
+            <span data-pos="delete-drink">x</span>
+          </div>
+          <!-- delete btn -->
+          <h6 class="card-title">Black Tea</h6>
+          <div class="card-text">Half Sugar</div>
+          <div class="card-text">Less Ice</div>
+        </div>
+        <div class="card-footer text-end py-2">
+          <div class="card-text text-muted">
+            $ <span data-drink-price>30</span>
+          </div>
+        </div>
+      </div> --}}
+    </div>
+
+    <!-- left side order list -->
+    <div class="col-md-8 p-4" data-order-panel>
+      <!-- product list -->
+      <section class="menu mb-4 btn-group-toggle">
+        <!-- 1st row -->
+        <div class="row mb-3">
+            <div class="col-2 card text-center text-center m-2 btn btn-outline-info">
+              <label for="Black Tea" class="card-body px-2 btn-hide-radio">
+                <h5 class="card-title">Black Tea</h5>
+                <input type="radio" id="Black Tea" name="drink" value="Black Tea">
+              </label>
+            </div>
+            <div class="col-2 card text-center text-center m-2 btn btn-outline-info">
+              <label for="Oolong Tea" class="card-body px-2 btn-hide-radio">
+                <h5 class="card-title">Oolong Tea</h5>
+                <input type="radio" id="Oolong Tea" name="drink" value="Oolong Tea">
+              </label>
+            </div>
+            <div class="col-2 card text-center text-center m-2 btn btn-outline-info">
+              <label for="Baozong Tea" class="card-body px-2 btn-hide-radio">
+                <h5 class="card-title">Baozong Tea</h5>
+                <input type="radio" id="Baozong Tea" name="drink" value="Baozong Tea">
+              </label>
+            </div>
+            <div class="col-2 card text-center text-center m-2 btn btn-outline-info">
+              <label for="Green Tea" class="card-body px-2 btn-hide-radio">
+                <h5 class="card-title">Green Tea</h5>
+                <input type="radio" id="Green Tea" name="drink" value="Green Tea">
+              </label>
+            </div>
+        </div>
+        <!-- 2nd row -->
+        <div class="row mb-3">
+            <div class="col-2 card text-center text-center m-2 btn btn-outline-info">
+              <label for="Bubble Milk Tea" class="card-body px-2 btn-hide-radio">
+                <h5 class="card-title">Bubble Milk Tea</h5>
+                <input type="radio" id="Bubble Milk Tea" name="drink" value="Bubble Milk Tea">
+              </label>
+            </div>
+            <div class="col-2 card text-center text-center m-2 btn btn-outline-info">
+              <label for="Black Tea Latte" class="card-body px-2 btn-hide-radio">
+                <h5 class="card-title">Black Tea Latte</h5>
+                <input type="radio" id="Black Tea Latte" name="drink" value="Black Tea Latte">
+              </label>
+            </div>
+            <div class="col-2 card text-center text-center m-2 btn btn-outline-info">
+              <label for="Lemon Green Tea" class="card-body px-2 btn-hide-radio">
+                <h5 class="card-title">Lemon Green Tea</h5>
+                <input type="radio" id="Lemon Green Tea" name="drink" value="Lemon Green Tea">
+              </label>
+            </div>
+            <div class="col-2 card text-center text-center m-2 btn btn-outline-info">
+              <label for="Matcha Latte" class="card-body px-2 btn-hide-radio">
+                <h5 class="card-title">Matcha Latte</h5>
+                <input type="radio" id="Matcha Latte" name="drink" value="Matcha Latte">
+              </label>
+            </div>
+        </div>
+      </section>
+        
+      <!-- btn group_sugar -->
+      <section class="sugar mb-4">
+        <label  class="d-block text-light mb-2">Sugar</label>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-outline-info btn-hide-radio">
+            <input type="radio" name="sugar" value="No Sugar">No
+          </label>
+          <label  class="btn btn-outline-info btn-hide-radio">
+            <input type="radio" name="sugar" value="A Little Sugar">A Little
+          </label>
+          <label class="btn btn-outline-info btn-hide-radio">
+            <input type="radio" name="sugar" value="Half Sugar">Half
+          </label>
+          <label class="btn btn-outline-info btn-hide-radio">
+            <input type="radio" name="sugar" value="Less Sugar">Less
+          </label>
+          <label class="btn btn-outline-info btn-hide-radio active">
+            <input type="radio" name="sugar" value="Regular Sugar" checked>Regular
+          </label>
+        </div>
+      </section>
+      <!-- btn group_ice -->
+      <section class="ice mb-4">
+        <label for="" class="d-block text-light mb-2">Ice</label>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label for="No Ice" class="btn btn-outline-info btn-hide-radio">
+            <input type="radio" name="ice" value="No Ice" id="No Ice">No
+          </label>
+          <label for="Less Ice" class="btn btn-outline-info btn-hide-radio">
+            <input type="radio" name="ice" value="Less Ice" id="Less Ice">Less
+          </label>
+          <label for="Regular Ice" class="btn btn-outline-info btn-hide-radio active">
+            <input type="radio" name="ice" value="Regular Ice" id="Regular Ice" checked>Regular
+          </label>
+        </div>
+      </section>
+      <!-- add-drink -->
+      <div class="text-end">
+        <div class="btn btn-primary" style="min-width:120px;" data-pos="add-drink">Add</div>
+      </div>
+    </div>
+  </div>
+</div>
