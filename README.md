@@ -1,5 +1,5 @@
 # README
-!(https://github.com/playcsgo/beverage/blob/main/cover.png)
+![index](https://github.com/playcsgo/beverage/blob/main/cover.png)
 
 主要功能:
 新增訂單 (add drink) ：根據店員在右側飲料點單區中所選擇的飲料品項、甜度、冰塊新建成一筆訂單，並添加到左側的飲料訂單區。
