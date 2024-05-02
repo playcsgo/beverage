@@ -1,4 +1,6 @@
 # README
+!(https://github.com/playcsgo/beverage/blob/main/cover.png)
+
 主要功能:
 新增訂單 (add drink) ：根據店員在右側飲料點單區中所選擇的飲料品項、甜度、冰塊新建成一筆訂單，並添加到左側的飲料訂單區。
 刪除某個飲料品項 (delete drink) ：當店員點錯品項或客戶想要修改品項時，店員可以使用刪除圖示 (×) 把該品項刪除。
